@@ -2,8 +2,8 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
-import Welcome from "../pages/welcome";
-import Signin from "../pages/signin"
+import TelaInicial from "../pages/TelaInicial";
+import TelaLogin from "../pages/TelaLogin"
 
 const Stack = createNativeStackNavigator()
 
@@ -12,15 +12,15 @@ export default function Routes() {
     return (
         <Stack.Navigator>
             <Stack.Screen
-                name="Welcome"
-                component={Welcome}
+                name="TelaInicial"
+                component={TelaInicial}
                 options={{headerShown: false}}
             />
 
 
             <Stack.Screen
-                name="Signin"
-                component={Signin}
+                name="TelaLogin"
+                component={TelaLogin}
                 options={{headerShown: false}}
             />
         </Stack.Navigator>
